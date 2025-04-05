@@ -21,7 +21,7 @@ pipeline{
                                 userRemoteConfigs: [[url: 'https://github.com/ShaileshKalyane/Jenkins.git']])
                 }
             }
-            stage('Build'){
+            stage('Test'){
                 steps{
                     sh '''
                      ls -lrt
