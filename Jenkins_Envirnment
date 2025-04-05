@@ -1,4 +1,4 @@
-pipleline{
+pipeline{
     agnet any 
 
     stages{
@@ -9,7 +9,7 @@ pipleline{
                                 userRemoteConfigs: [[url: 'https://github.com/ShaileshKalyane/Jenkins.git']])
                 }
             }
-            stage('Build'){
+        stage('Build'){
             steps{
                   sh"""
                   ls -lrt
