@@ -14,5 +14,19 @@ pipeline{
                     '''
                 }
             }
+            stage('Checkout with checkout'){
+                steps{
+                checkout scmGit(branches: [[name: '*/main']], 
+                                extensions: [], 
+                                userRemoteConfigs: [[url: 'https://github.com/ShaileshKalyane/Jenkins.git']])
+                }
+            }
+            stage('Build'){
+                steps{
+                    sh '''
+                     ls -lrt
+                    '''
+                }
+            }
         }
     }
