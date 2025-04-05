@@ -14,7 +14,7 @@ pipeline{
                   sh"""
                   ls -lrt
                   pwd
-                  """
+                  """ 
                 }
             }
         }
