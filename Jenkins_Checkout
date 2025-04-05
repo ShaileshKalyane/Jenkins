@@ -1,13 +1,13 @@
 pipeline{
-    agent any{
+    agent any
 
-        stages{
+        stages {
             stage('Checkout with git'){
                 step{
                     git branch: 'main', url: 'https://github.com/ShaileshKalyane/Jenkins.git'
                 }
             }
-        stage('Build'){
+            stage('Build'){
                 step{
                     sh '''
                      ls -lrt
@@ -16,4 +16,3 @@ pipeline{
             }
         }
     }
-}
